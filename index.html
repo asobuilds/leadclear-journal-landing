@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The LeadClear Leadership Starter Journal</title>
     <!-- Version tag forces your browser cache to refresh instantly -->
-    <link rel="stylesheet" href="assets/css/style.css?v=4.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=5.0">
     <link href="https://googleapis.com" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +19,7 @@
             
             <div class="hero-split">
                 <div class="hero-image">
-                    <!-- Points directly to your local project folder -->
+                    <!-- Points directly to your local project folder image asset -->
                     <img src="assets/images/book-cover.png" alt="The LeadClear Leadership Starter Journal Cover">
                 </div>
                 <div class="hero-features">
@@ -83,7 +83,38 @@
         </div>
     </section>
 
-    <!-- 4. MEET THE CREATOR BIOGRAPHY SECTION -->
+    <!-- 4. INTERACTIVE FAQ DROPDOWN MODULE -->
+    <section class="faq-section">
+        <div class="container">
+            <span class="small-label">QUESTIONS</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What format is the journal delivered in? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>It is delivered as an instant, high-resolution digital PDF download via Selar. You can print it out locally at home/office or fill it out digitally on your tablet or computer device.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">How does the 30-day system work? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>The journal is broken into daily strategic layout spreads. Each morning you spend 5 minutes mapping your core metrics, and each weekend you fill out data-driven reflection loops to track habit trends.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Is the checkout system secure? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes. All transactions are securely processed directly by Selar using industry-standard e-commerce encryption. You can pay seamlessly via card, bank transfer, or USSD.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. MEET THE CREATOR BIOGRAPHY SECTION -->
     <section class="author-section">
         <div class="container">
             <div class="author-split">
@@ -96,6 +127,28 @@
             </div>
         </div>
     </section>
+
+    <!-- INTERACTIVE JAVASCRIPT ACCORDION LOGIC ENGINE -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+                
+                // Toggle active state layout
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    icon.textContent = "−";
+                } else {
+                    answer.style.maxHeight = null;
+                    icon.textContent = "+";
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

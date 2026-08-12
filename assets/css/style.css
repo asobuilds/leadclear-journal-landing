@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #101626; /* Dark Navy Canvas matching the book theme */
+    background-color: #101626; /* Dark Navy Canvas */
     color: #FFFFFF;
     line-height: 1.6;
 }
@@ -27,7 +27,7 @@ body {
 .badge {
     display: inline-block;
     background: rgba(212, 175, 55, 0.1);
-    color: #D4AF37; /* Luxury Gold from Book Cover */
+    color: #D4AF37; /* Luxury Gold */
     border: 1px solid #D4AF37;
     padding: 6px 16px;
     font-weight: 700;
@@ -197,6 +197,67 @@ h1 {
     font-size: 0.85rem;
 }
 
+/* Engineering FAQ Accordion Panel Layout */
+.faq-section {
+    background-color: #101626;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 750px;
+    margin: 40px auto 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: #1a2236;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.faq-item:hover, .faq-item.active {
+    border-color: #D4AF37;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 22px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-icon {
+    color: #D4AF37;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 30px;
+}
+
+.faq-answer p {
+    color: #A0AEC0;
+    padding-bottom: 22px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /* Author Bio Layout */
 .author-section {
     padding: 100px 0;
@@ -237,4 +298,6 @@ h1 {
     .cta-button { width: 100%; text-align: center; }
     .grid-3-columns, .reviews-grid { flex-direction: column; }
     .author-details h2, .section-title { font-size: 1.8rem; }
+    .faq-question { padding: 18px 20px; font-size: 1rem; }
+    .faq-answer { padding: 0 20px; }
 }
