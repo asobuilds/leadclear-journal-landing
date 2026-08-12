@@ -158,10 +158,49 @@ h1 {
     font-size: 0.95rem;
 }
 
+/* Reviews Social Proof Grid */
+.reviews-section {
+    padding: 80px 0;
+    background-color: #101626;
+    text-align: center;
+}
+
+.reviews-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.review-card {
+    background-color: #1a2236;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left;
+    flex: 1;
+    border-left: 4px solid #D4AF37;
+}
+
+.review-text {
+    font-style: italic;
+    color: #E2E8F0;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.review-author strong {
+    display: block;
+    color: #FFFFFF;
+}
+
+.review-author span {
+    color: #718096;
+    font-size: 0.85rem;
+}
+
 /* Author Bio Layout */
 .author-section {
     padding: 100px 0;
-    background-color: #101626;
+    background-color: #1a2236;
 }
 
 .author-split {
@@ -196,6 +235,6 @@ h1 {
     .hero-split { flex-direction: column; text-align: center; }
     .features-list li { text-align: left; }
     .cta-button { width: 100%; text-align: center; }
-    .grid-3-columns { flex-direction: column; }
+    .grid-3-columns, .reviews-grid { flex-direction: column; }
     .author-details h2, .section-title { font-size: 1.8rem; }
 }
