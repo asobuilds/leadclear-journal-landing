@@ -344,14 +344,19 @@ h1 {
     align-items: center;
 }
 
+/* FOOLPROOF ASSIGNMENT MIXIN: WE DRIVER SYMBOLS PURELY VIA CSS PSEUDO GENERATORS */
 .faq-icon {
     color: #D4AF37;
     font-size: 1.4rem;
     transition: transform 0.3s ease;
 }
 
-.faq-item.active .faq-icon {
-    transform: rotate(45deg);
+.faq-icon::before {
+    content: "+";
+}
+
+.faq-item.active .faq-icon::before {
+    content: "-";
 }
 
 .faq-answer {
@@ -365,6 +370,29 @@ h1 {
     color: #A0AEC0;
     padding-bottom: 24px;
     font-size: 0.95rem;
+}
+
+/* Restored & Aligned About Brand Section Layout */
+.author-section {
+    padding: 100px 0;
+    background-color: #1a2236 !important;
+    text-align: center;
+}
+
+.author-split {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.author-details h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.author-details p {
+    color: #A0AEC0;
+    font-size: 1.1rem;
 }
 
 /* Footer Section */
