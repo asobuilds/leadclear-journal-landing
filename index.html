@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The LeadClear Leadership Starter Journal</title>
-    <!-- We increase the version tag to force mobile browsers to fetch the fresh links instantly -->
-    <link rel="stylesheet" href="assets/css/style.css?v=40.0">
+    <!-- Appended version tag forces your mobile browser cache to refresh instantly -->
+    <link rel="stylesheet" href="assets/css/style.css?v=60.0">
+    <!-- Clean encoded font parameters to prevent syntax verification alerts -->
     <link href="https://googleapis.com" rel="stylesheet">
 </head>
 <body>
@@ -52,8 +53,8 @@
                             </div>
                         </li>
                     </ul>
-                    <!-- Route targeted directly at her primary public Selar storefront profile link -->
-                    <a href="https://selar.co" class="cta-button" target="_blank">Get Your Journal on Selar</a>
+                    <!-- Hardcoded explicitly to your direct target link destination -->
+                    <a href="https://selar.com/p6e27jvng7" class="cta-button" target="_blank">Get Your Journal on Selar</a>
                     <p class="format-tag">✨ Instant PDF Access & Printable Delivery System Provided by Selar</p>
                 </div>
             </div>
@@ -129,40 +130,31 @@
                     <div class="price-box">
                         <span class="currency-tag">NIGERIAN NAIRA</span>
                         <div class="main-amt">₦3,500</div>
-                        <!-- Route targeted directly at her primary public Selar storefront profile link -->
-                        <a href="https://selar.co" class="cta-button pricing-btn" target="_blank">Secure Your Copy Now</a>
+                        <!-- Hardcoded explicitly to your direct target link destination -->
+                        <a href="https://selar.com/p6e27jvng7" class="cta-button pricing-btn" target="_blank">Secure Your Copy Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. FAQ DROPDOWN MATRIX -->
+    <!-- 6. FAQ STRUCTURAL BLOCK SECTION -->
     <section class="faq-section">
         <div class="container">
             <span class="small-label">QUESTIONS</span>
             <h2 class="section-title">Frequently Asked Questions</h2>
-            
             <div class="faq-container">
                 <div class="faq-item">
-                    <button class="faq-question">What format is the journal delivered in? <span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>It is delivered as an instant, high-resolution digital PDF download via Selar. You can print it out locally at home or office, or fill it out digitally on your tablet or computer device.</p>
-                    </div>
+                    <div style="font-weight: 700; margin-bottom: 10px; color: #D4AF37;">What format is the journal delivered in?</div>
+                    <p style="color: #A0AEC0; font-size: 0.95rem;">It is delivered as an instant, high-resolution digital PDF download via Selar. You can print it out locally at home or office, or fill it out digitally on your tablet or computer device.</p>
                 </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question">How does the 30-day system work? <span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>The system is broken into daily framework layout spreads. Each morning you spend 5 minutes mapping your core metrics, and each weekend you fill out data-driven reflection loops to track habit trends.</p>
-                    </div>
+                <div class="faq-item" style="margin-top: 25px;">
+                    <div style="font-weight: 700; margin-bottom: 10px; color: #D4AF37;">How does the 30-day system work?</div>
+                    <p style="color: #A0AEC0; font-size: 0.95rem;">The system is broken into daily framework layout spreads. Each morning you spend 5 minutes mapping your core metrics, and each weekend you fill out data-driven reflection loops to track habit trends.</p>
                 </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">Is the checkout system secure? <span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>Yes. All transactions are securely processed directly by Selar using industry-standard e-commerce encryption. You can pay seamlessly via card, bank transfer, or USSD.</p>
-                    </div>
+                <div class="faq-item" style="margin-top: 25px;">
+                    <div style="font-weight: 700; margin-bottom: 10px; color: #D4AF37;">Is the checkout system secure?</div>
+                    <p style="color: #A0AEC0; font-size: 0.95rem;">Yes. All transactions are securely processed directly by Selar using industry-standard e-commerce encryption. You can pay seamlessly via card, bank transfer, or USSD.</p>
                 </div>
             </div>
         </div>
@@ -174,27 +166,6 @@
             <p>&copy; 2026 LeadClear Systems. All Rights Reserved. Built for high-performance execution.</p>
         </div>
     </footer>
-
-    <!-- INTERACTIVE JAVASCRIPT ACCORDION LOGIC ENGINE -->
-    <script>
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const faqItem = button.parentElement;
-                const answer = button.nextElementSibling;
-                const icon = button.querySelector('.faq-icon');
-                
-                faqItem.classList.toggle('active');
-                
-                if (faqItem.classList.contains('active')) {
-                    answer.style.maxHeight = answer.scrollHeight + "px";
-                    icon.textContent = "-";
-                } else {
-                    answer.style.maxHeight = null;
-                    icon.textContent = "+";
-                }
-            });
-        });
-    </script>
 
 </body>
 </html>
