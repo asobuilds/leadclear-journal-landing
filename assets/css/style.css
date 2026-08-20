@@ -1,199 +1,383 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The LeadClear Leadership Starter Journal</title>
-    <!-- Version tag forces your mobile browser cache to refresh instantly -->
-    <link rel="stylesheet" href="assets/css/style.css?v=16.0">
-    <!-- Perfect syntax font integration link setup -->
-    <link href="https://googleapis.com" rel="stylesheet">
-</head>
-<body>
+/* Core Structural Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- 1. NAVIGATION BAR -->
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">LEADCLEAR SYSTEMS</div>
-        </div>
-    </header>
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #1e2942 0%, #101626 70%) !important; /* Glowing Aura Canvas */
+    background-color: #101626 !important; /* Fallback luxury navy blue background */
+    color: #FFFFFF;
+    line-height: 1.6;
+}
 
-    <!-- 2. HERO SECTION -->
-    <section class="hero">
-        <div class="container">
-            <div class="badge">SYSTEMATIC LEADERSHIP ENGINE</div>
-            <h1>Lead with Purpose.<br>Grow Systematically.</h1>
-            <p class="subtitle">The LeadClear Leadership Starter Journal is your 30-day corporate clarity system engineered for intentional execution and tracking tactical metrics.</p>
-            
-            <div class="hero-split">
-                <div class="hero-image">
-                    <img src="assets/images/book-cover.png" alt="The LeadClear Leadership Starter Journal Cover">
-                </div>
-                <div class="hero-features">
-                    <ul class="features-list">
-                        <li>
-                            <span class="feat-icon">🎯</span>
-                            <div>
-                                <strong>Intentional Execution:</strong>
-                                <p>Eliminate morning guesswork and structure your critical daily operational goals.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="feat-icon">⚡</span>
-                            <div>
-                                <strong>Consistency Framework:</strong>
-                                <p>Form powerful, unbroken management habits over a verified 30-day timeline.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="feat-icon">📊</span>
-                            <div>
-                                <strong>Tactical Metrics:</strong>
-                                <p>Track your team’s performance velocity loops with built-in reflection matrices.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <a href="https://selar.com" class="cta-button" target="_blank">Get Your Journal on Selar</a>
-                    <p class="format-tag">✨ Instant PDF Access & Printable Delivery System Provided by Selar</p>
-                </div>
-            </div>
-        </div>
-    </section>
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
 
-    <!-- 3. INTERNAL MODULE GRID -->
-    <section class="details-section">
-        <div class="container">
-            <h2 class="section-title">Engineered to Drive Daily Progress</h2>
-            <div class="grid-3-columns">
-                <div class="grid-card">
-                    <div class="card-icon">🗒️</div>
-                    <h3>Daily Starter Blocks</h3>
-                    <p>Map your critical corporate targets every morning before operational distraction kicks in. Keep execution aligned.</p>
-                </div>
-                <div class="grid-card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Execution Prompts</h3>
-                    <p>Structured daily accountability triggers designed to identify performance bottlenecks and eliminate friction instantly.</p>
-                </div>
-                <div class="grid-card">
-                    <div class="card-icon">📈</div>
-                    <h3>30-Day Reflection Loops</h3>
-                    <p>End-of-week data tracking panels to measure your leadership growth, operational habits, and system trends.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+/* Navbar Interface */
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(16, 22, 38, 0.8);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-    <!-- 4. SOCIAL PROOF ROW -->
-    <section class="reviews-section">
-        <div class="container">
-            <span class="small-label">SOCIAL PROOF</span>
-            <h2 class="section-title">What Early Readers Are Saying</h2>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <p class="review-text">"This layout completely removed my operational guesswork. I now map out my tactical targets cleanly in under 5 minutes every single morning."</p>
-                    <div class="review-author">
-                        <strong>Tunde O.</strong>
-                        <span>Operations Director</span>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <p class="review-text">"An incredible engineering approach to consistency. The 30-day reflection loops helped me spot structural bottlenecks I didn't know I had."</p>
-                    <div class="review-author">
-                        <strong>Amara K.</strong>
-                        <span>Startup Founder</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
 
-    <!-- 5. PREMIUM PRICING CARD -->
-    <section class="pricing-section">
-        <div class="container">
-            <span class="small-label">INVESTMENT</span>
-            <h2 class="section-title">Secure Your Strategic Blueprint</h2>
-            <div class="pricing-card">
-                <div class="pricing-tag">MOST POPULAR</div>
-                <div class="pricing-split">
-                    <div class="price-info">
-                        <h3>Digital Journal System</h3>
-                        <p class="price-desc">Get instant lifetime access to the complete high-resolution printable leadership framework bundle.</p>
-                        <ul class="price-perks">
-                            <li>✓ Full 30-Day Digital Layout Toolkit</li>
-                            <li>✓ High-Resolution Printable Format</li>
-                            <li>✓ Interactive PDF Compatibility</li>
-                            <li>✓ Weekly Performance Trackers</li>
-                        </ul>
-                    </div>
-                    <div class="price-box">
-                        <span class="currency-tag">NIGERIAN NAIRA</span>
-                        <div class="main-amt">₦3,500</div>
-                        <a href="https://selar.com" class="cta-button pricing-btn" target="_blank">Secure Your Copy Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+.nav-logo {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    color: #D4AF37;
+}
 
-    <!-- 6. FAQ DROPDOWN MATRIX -->
-    <section class="faq-section">
-        <div class="container">
-            <span class="small-label">QUESTIONS</span>
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            
-            <div class="faq-container">
-                <div class="faq-item">
-                    <button class="faq-question">What format is the journal delivered in? <span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>It is delivered as an instant, high-resolution digital PDF download via Selar. You can print it out locally at home or office, or fill it out digitally on your tablet or computer device.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question">How does the 30-day system work? <span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>The system is broken into daily framework layout spreads. Each morning you spend 5 minutes mapping your core metrics, and each weekend you fill out data-driven reflection loops to track habit trends.</p>
-                    </div>
-                </div>
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    text-align: center;
+}
 
-                <div class="faq-item">
-                    <button class="faq-question">Is the checkout system secure? <span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>Yes. All transactions are securely processed directly by Selar using industry-standard e-commerce encryption. You can pay seamlessly via card, bank transfer, or USSD.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+.badge {
+    display: inline-block;
+    background: rgba(212, 175, 55, 0.1);
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+    padding: 6px 18px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    letter-spacing: 1.5px;
+}
 
-    <!-- 7. BRAND FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 LeadClear Systems. All Rights Reserved. Built for high-performance execution.</p>
-        </div>
-    </footer>
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #FFFFFF 50%, #D4AF37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-    <!-- INTERACTIVE JAVASCRIPT ACCORDION LOGIC ENGINE -->
-    <script>
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const faqItem = button.parentElement;
-                const answer = button.nextElementSibling;
-                const icon = button.querySelector('.faq-icon');
-                
-                faqItem.classList.toggle('active');
-                
-                if (faqItem.classList.contains('active')) {
-                    answer.style.maxHeight = answer.scrollHeight + "px";
-                    icon.textContent = "-";
-                } else {
-                    answer.style.maxHeight = null;
-                    icon.textContent = "+";
-                }
-            });
-        });
-    </script>
+.subtitle {
+    font-size: 1.2rem;
+    color: #A0AEC0;
+    max-width: 750px;
+    margin: 0 auto 60px auto;
+}
 
-</body>
-</html>
+/* Hero Columns */
+.hero-split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    text-align: left;
+}
+
+.hero-image, .hero-features {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8);
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.02) rotate(1deg);
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.features-list li {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.feat-icon {
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px;
+    border-radius: 12px;
+    height: fit-content;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.features-list strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #D4AF37;
+    margin-bottom: 4px;
+}
+
+.features-list p {
+    color: #A0AEC0;
+    font-size: 0.95rem;
+}
+
+/* CTA Elements */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #D4AF37 0%, #B89324 100%);
+    color: #101626;
+    text-decoration: none;
+    padding: 18px 40px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.25);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+}
+
+.format-tag {
+    font-size: 0.85rem;
+    color: #718096;
+    margin-top: 15px;
+}
+
+/* Glassmorphism Feature Grid */
+.details-section {
+    background-color: #0b0f1b !important;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.grid-3-columns {
+    display: flex;
+    gap: 30px;
+}
+
+.grid-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(8px);
+    padding: 45px 35px;
+    border-radius: 16px;
+    flex: 1;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.grid-card:hover {
+    border-color: #D4AF37;
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.grid-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #D4AF37;
+}
+
+.grid-card p {
+    color: #A0AEC0;
+    font-size: 0.95rem;
+}
+
+/* Reviews Panels */
+.reviews-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.reviews-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.review-card {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: left;
+    flex: 1;
+    border-top: 3px solid #D4AF37;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.review-text {
+    font-style: italic;
+    color: #E2E8F0;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.review-author strong {
+    display: block;
+    color: #FFFFFF;
+}
+
+.review-author span {
+    color: #718096;
+    font-size: 0.85rem;
+}
+
+/* Premium Pricing Matrix Box */
+.pricing-section {
+    background-color: #0b0f1b !important;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.pricing-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 20px;
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.pricing-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #D4AF37;
+    color: #101626;
+    padding: 6px 14px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+.pricing-split {
+    display: flex;
+    padding: 50px;
+    gap: 40px;
+    align-items: center;
+}
+
+.price-info { flex: 1.2; }
+.price-box { flex: 0.8; text-align: center; border-left: 1px solid rgba(255,255,255,0.08); padding-left: 40px; }
+
+.price-info h3 { font-size: 1.8rem; margin-bottom: 8px; color: #FFFFFF; }
+.price-desc { color: #A0AEC0; font-size: 0.95rem; margin-bottom: 25px; }
+
+.price-perks { list-style: none; }
+.price-perks li { margin-bottom: 12px; color: #E2E8F0; font-size: 1rem; }
+
+.currency-tag { font-size: 0.75rem; letter-spacing: 1.5px; color: #718096; display: block; margin-bottom: 5px; }
+.main-amt { font-size: 3.5rem; font-weight: 700; color: #D4AF37; margin-bottom: 20px; }
+.pricing-btn { width: 100%; text-align: center; }
+
+/* FAQ Panels */
+.faq-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 750px;
+    margin: 40px auto 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: rgba(255,255,255,0.02);
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover, .faq-item.active {
+    border-color: #D4AF37;
+    background: rgba(255,255,255,0.03);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 24px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-icon {
+    color: #D4AF37;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 30px;
+}
+
+.faq-answer p {
+    color: #A0AEC0;
+    padding-bottom: 24px;
+    font-size: 0.95rem;
+}
+
+/* Footer Section */
+.small-label { color: #D4AF37; font-weight: 700; font-size: 0.8rem; letter-spacing: 2px; display: block; margin-bottom: 15px; }
+.footer { padding: 40px 0; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center; font-size: 0.85rem; color: #718096; background-color: #101626; }
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    h1 { font-size: 2.4rem; }
+    .hero-split, .grid-3-columns, .reviews-grid, .pricing-split { flex-direction: column; text-align: center; }
+    .hero-image img { max-width: 320px; }
+    .features-list li { text-align: left; }
+    .price-box { border-left: none; padding-left: 0; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 30px; width: 100%; }
+    .faq-question { padding: 20px; font-size: 1rem; }
+    .faq-answer { padding: 0 20px; }
+}
