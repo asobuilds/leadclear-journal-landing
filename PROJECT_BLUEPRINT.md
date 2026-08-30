@@ -11,7 +11,7 @@ LeadClear Leadership Systems commissioned a premium, high-converting digital boo
 
 ### Strategic Constraints
 - **Branding Transformation:** Re-engineer the layout to transition seamlessly from individual personal branding to a corporate, scalable entity structure ("The LeadClear Systems Team").
-- **Transactional Infrastructure:** Securely route all call-to-action buttons to the absolute target checkout page on Selar (`https://selar.com`).
+- **Transactional Infrastructure:** Securely route all call-to-action buttons to the absolute target checkout page on Selar (`https://selar.com/p6e27jvng7`).
 - **Domain Integration Ecosystem:** Map the codebase inside the client's preferred system manager platform (Systeme.io) to allow native corporate custom subdomain mapping while maintaining 100% style fidelity.
 
 ---
@@ -84,7 +84,7 @@ git push
 ```
 
 ### Live Operational Target Endpoints:
-- **Prinstine Source Web Link:** `https://github.io`
+- **Prinstine Source Web Link:** `https://vercel.app`
 - **Active Native Funnel Hook:** `https://systeme.io`
 
 ---
