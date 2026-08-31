@@ -1,3 +1,4 @@
+```css
 /* Core Structural Reset & Premium Variables */
 * {
     margin: 0;
@@ -7,7 +8,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #FFFFFF !important; /* White dominant backdrop canvas */
+    background-color: #FFFFFF !important;
     color: #1a2236;
     line-height: 1.6;
 }
@@ -18,7 +19,7 @@ body {
     padding: 60px 20px;
 }
 
-/* Navbar Interface */
+/* Navbar Interface (Corporate Editorial Branding) */
 .navbar {
     border-bottom: 1px solid rgba(16, 22, 38, 0.05);
     background-color: #FFFFFF;
@@ -30,16 +31,17 @@ body {
 .nav-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 24px;
     display: flex;
     justify-content: center;
 }
 
 .nav-logo {
+    font-family: 'Cinzel', serif; /* Premium Corporate Branded Serif Font */
     font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    color: #101626; /* Navy logo identity */
+    letter-spacing: 7px; /* Elegant geometric tracking */
+    font-size: 1.4rem;
+    color: #101626; /* Deep Navy Logo Identity */
 }
 
 /* White Hero Design Layout */
@@ -67,7 +69,7 @@ body {
     font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.15;
-    color: #101626; /* Navy for authority */
+    color: #101626;
     margin-bottom: 15px;
 }
 
@@ -116,10 +118,10 @@ body {
     font-size: 1.05rem;
 }
 
-/* Universal CTA Buttons */
+/* Universal Call-to-Action Anchors */
 .cta-button {
     display: inline-block;
-    background: #D4AF37; /* Gold accent */
+    background: #D4AF37;
     color: #101626;
     text-decoration: none;
     padding: 16px 36px;
@@ -130,6 +132,7 @@ body {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .cta-button:hover {
@@ -145,7 +148,7 @@ body {
 
 /* Solid Navy Anchor Stripe Section */
 .problem-navy-stripe {
-    background-color: #101626 !important; /* Solid anchor block */
+    background-color: #101626 !important;
     color: #FFFFFF;
     padding: 80px 0;
     text-align: center;
@@ -211,25 +214,17 @@ body {
 .solution-left-card {
     max-width: 650px;
     margin: 0 auto;
-    background: #F8FAFC; /* Soft clean neutral container split */
+    background: #F8FAFC;
     padding: 40px;
     border-radius: 12px;
     text-align: left;
     border: 1px solid #EDF2F7;
 }
 
-.solution-checklist {
-    list-style: none;
-}
+.solution-checklist { list-style: none; }
+.solution-checklist li { font-size: 1.1rem; color: #2D3748; margin-bottom: 15px; font-weight: 500; }
 
-.solution-checklist li {
-    font-size: 1.1rem;
-    color: #2D3748;
-    margin-bottom: 15px;
-    font-weight: 500;
-}
-
-/* See What's Inside Product Previews Module layout */
+/* Product Document Frame Sheets (See What's Inside) */
 .inside-white-section {
     background-color: #FFFFFF;
     padding: 60px 0;
@@ -254,32 +249,94 @@ body {
     background: #FFFFFF;
     border: 1px solid #E2E8F0;
     border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 10px 25px rgba(16, 22, 38, 0.04);
+    padding: 24px;
+    box-shadow: 0 15px 35px rgba(16, 22, 38, 0.05);
+    text-align: left;
+}
+
+.page-header-index {
+    display: block;
+    font-size: 0.75rem;
+    color: #A0AEC0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
 }
 
 .page-tag {
     display: block;
     font-weight: 700;
-    font-size: 0.8rem;
-    color: #B89324;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #101626;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #EDF2F7;
+    padding-bottom: 8px;
 }
 
-.placeholder-sample-page {
-    background-color: #F8FAFC;
-    border: 2px dashed #E2E8F0;
-    border-radius: 8px;
-    padding: 80px 20px;
+/* Transcribed Document Sheet Styling Canvas */
+.actual-journal-page-canvas {
+    background-color: #FFFFFF;
+    min-height: 480px;
+}
+
+.actual-journal-page-canvas h4 {
+    font-size: 1rem;
+    color: #101626;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.actual-journal-page-canvas h4.focus-alert-label {
+    color: #101626;
+    margin-bottom: 2px;
+    letter-spacing: 0.5px;
+}
+
+.sub-alert-text {
+    font-size: 0.75rem;
     color: #718096;
-    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.sample-prompt-line {
+    font-size: 0.85rem;
+    color: #4A5568;
+    background-color: #F8FAFC;
+    padding: 10px 12px;
+    border-left: 3px solid #D4AF37;
+    margin-bottom: 12px;
     font-weight: 500;
+    border-radius: 0 4px 4px 0;
+}
+
+.sample-order-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sample-order-list li {
+    font-size: 0.85rem;
+    color: #CBD5E0;
+    margin-bottom: 6px;
+}
+
+.page-footer-quote {
+    font-size: 0.75rem;
+    color: #B89324;
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px dashed #E2E8F0;
+    padding-top: 10px;
 }
 
 .framework-bullets-container {
     max-width: 750px;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
     border-top: 1px solid #EDF2F7;
     padding-top: 40px;
 }
@@ -308,7 +365,7 @@ body {
     max-width: 750px;
     margin: 0 auto;
     background-color: #F8FAFC;
-    border-left: 4px solid #D4AF37; /* Gold focus border tag accent */
+    border-left: 4px solid #D4AF37;
     border-top: 1px solid #EDF2F7;
     border-right: 1px solid #EDF2F7;
     border-bottom: 1px solid #EDF2F7;
@@ -375,7 +432,7 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #E2E8F0;
     border-radius: 16px;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -404,11 +461,10 @@ body {
 }
 
 .price-info-dark { flex: 1.2; }
-.price-box_section { flex: 1; }
 
 .price-box-navy {
     flex: 0.8;
-    background-color: #101626; /* Navy authority anchor fill box */
+    background-color: #101626;
     color: #FFFFFF;
     padding: 40px 30px;
     border-radius: 12px;
@@ -419,33 +475,4 @@ body {
 .price-desc-dark { color: #4A5568; font-size: 0.95rem; margin-bottom: 25px; }
 
 .price-perks-dark { list-style: none; }
-.price-perks-dark li { margin-bottom: 10px; color: #2D3748; font-weight: 500; font-size: 0.95rem; }
-
-.currency-tag-white { font-size: 0.7rem; letter-spacing: 1px; color: #A0AEC0; display: block; margin-bottom: 2px; }
-.main-amt-gold { font-size: 3.2rem; font-weight: 700; color: #D4AF37; margin-bottom: 15px; }
-.pricing-btn-gold { width: 100%; text-align: center; background: #D4AF37; color: #101626; }
-.secure-tag-white { font-size: 0.75rem; color: #A0AEC0; display: block; margin-top: 10px; }
-
-/* Audience Target Grids Layout */
-.faq-section { padding: 60px 0; text-align: center; }
-.faq-container { margin: 30px auto 0 auto; text-align: left; }
-.faq-item { background: #F8FAFC; border: 1px solid #EDF2F7; border-radius: 8px; }
-
-/* Footer Corporate UI Reset */
-.footer-clean {
-    padding: 40px 0;
-    border-top: 1px solid #EDF2F7;
-    text-align: center;
-    font-size: 0.85rem;
-    color: #718096;
-    background-color: #FFFFFF;
-}
-
-/* Mobile Fluid Scalability Framework */
-@media (max-width: 768px) {
-    .heading-navy { font-size: 2.2rem; }
-    .hero-split, .grid-4-columns, .journal-previews-row, .pricing-split-clean, .framework-grid-list { flex-direction: column; grid-template-columns: 1fr; text-align: center; }
-    .hero-image img { max-width: 300px; }
-    .framework-grid-list { text-align: left; }
-    .price-box-navy { margin-top: 20px; width: 100%; }
-}
+.price-perks-dark li { margin-bottom: 10px; color: #2D3748; font-weight: 500; font-size: 0.95rem; }.currency-tag-white { font-size: 0.7rem; letter-spacing: 1px; color: #A0AEC0; display: block; margin-bottom: 2px; }.main-amt-gold { font-size: 3.2rem; font-weight: 700; color: #D4AF37; margin-bottom: 15px; }.pricing-btn-gold { width: 100%; text-align: center; background: #D4AF37; color: #101626; }.secure-tag-white { font-size: 0.75rem; color: #A0AEC0; display: block; margin-top: 10px; }/* Audience Target Grids Layout */.faq-section { padding: 60px 0; text-align: center; }.faq-container { margin: 30px auto 0 auto; text-align: left; }.faq-item { background: #F8FAFC; border: 1px solid #EDF2F7; border-radius: 8px; }/* Footer Corporate UI Reset */.footer-clean {padding: 40px 0;border-top: 1px solid #EDF2F7;text-align: center;font-size: 0.85rem;color: #718096;background-color: #FFFFFF;}/* Mobile Fluid Scalability Framework */@media (max-width: 768px) {.heading-navy { font-size: 2.2rem; }.hero-split, .grid-4-columns, .journal-previews-row, .pricing-split-clean, .framework-grid-list { flex-direction: column; text-align: center; }.hero-image img { max-width: 300px; }.framework-grid-list { text-align: left; grid-template-columns: 1fr; }.price-box-navy { margin-top: 20px; width: 100%; }}
