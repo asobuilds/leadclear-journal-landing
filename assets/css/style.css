@@ -38,27 +38,33 @@ body {
     justify-content: center;
 }
 
-/* Balanced Bold Corporate Header Shield Display Box */
+/* Professional Catchy Corporate Header Shield Display Box */
 .logo-premium-display {
     background-color: #101626;
     border: 2px solid #D4AF37;
-    padding: 12px 32px;
+    padding: 14px 36px; /* Expanded padding for a bold corporate dashboard footprint */
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 18px;
-    box-shadow: 0 10px 30px rgba(16, 22, 38, 0.15);
+    gap: 20px;
+    box-shadow: 0 12px 35px rgba(16, 22, 38, 0.18);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.logo-premium-display:hover {
+    transform: scale(1.02);
 }
 
 /* Exact Bold Vector Monogram matching her provided brand image */
 .logo-shield-gold {
-    width: 48px;
-    height: 48px;
+    width: 52px; /* Increased size to deliver strong visual presence */
+    height: 52px;
     background-color: rgba(255, 255, 255, 0.03);
     border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .logo-svg-vector {
@@ -68,29 +74,30 @@ body {
 
 .logo-text-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-left: 2px solid rgba(212, 175, 55, 0.3); /* Strong gold accent divider line */
-    padding-left: 16px;
+    align-items: center;
+    border-left: 2px solid rgba(212, 175, 55, 0.3); /* Strong gold divider accent line */
+    padding-left: 20px;
 }
 
-.logo-main-title {
+/* Unified Single-Line High-Impact Corporate Title Heading */
+.company-brand-name {
     font-family: 'Cinzel', serif;
-    font-weight: 800;
-    letter-spacing: 5px; /* High presence professional alignment spacing */
-    font-size: 1.4rem;
-    color: #FFFFFF; /* High contrast white title text */
+    font-weight: 800; /* Max bold setting for clear corporate presence */
+    font-size: 1.5rem; /* Scaled up uniformly for high-end aesthetic appeal */
+    letter-spacing: 4px; /* Professional geometric character spacing */
     line-height: 1;
-    margin-bottom: 6px; /* Balanced spacing margin to bridge the text rows */
+    display: flex;
+    gap: 12px; /* Precise gap space separating the corporate title segments */
+    white-space: nowrap;
 }
 
-.logo-sub-tag {
-    font-family: 'Cinzel', serif; /* Shifted to matching serif font to rhyme seamlessly */
-    font-weight: 700;
-    color: #D4AF37; /* Accent gold subtag parameter */
-    letter-spacing: 5px; /* Matched geometric tracking to align borders perfectly with title */
-    font-size: 0.8rem; /* Scaled up to rhyme seamlessly with the logo main title layout */
-    line-height: 1;
+/* Distinct Brand Color Parameter Segmentations */
+.brand-white {
+    color: #FFFFFF; /* High-contrast white lettering for authority */
+}
+
+.brand-gold {
+    color: #D4AF37; /* Premium metallic gold lettering for premium accent */
 }
 
 /* White Hero Design Layout with Compact Spacing */
@@ -322,7 +329,7 @@ body {
 /* 100% Rigid Pricing Card Architecture Layout */
 .pricing-section { background-color: #FFFFFF; padding: 40px 0; text-align: center; }
 .pricing-card-white-elevated { background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; max-width: 850px; margin: 0 auto; position: relative; overflow: hidden; text-align: left; box-shadow: 0 15px 35px rgba(16, 22, 38, 0.04); }
-.pricing-tag-gold-neon { display: none; } /* Hidden on mobile by default to maximize vertical real estate */
+.pricing-tag-gold-neon { display: block; position: absolute; top: 15px; right: 15px; background-color: #101626; color: #D4AF37; padding: 5px 14px; font-weight: 700; font-size: 0.7rem; border-radius: 4px; letter-spacing: 1px; border: 1px solid rgba(212, 175, 55, 0.3); }
 
 .pricing-split-clean { display: flex; flex-direction: column; padding: 24px; gap: 20px; align-items: center; }
 .price-info-dark { width: 100%; text-align: center; }
@@ -400,7 +407,6 @@ body {
     
     .pricing-section { padding: 80px 0; }
     .pricing-card-white-elevated { border-radius: 16px; }
-    .pricing-tag-gold-neon { display: block; }
     .pricing-split-clean { flex-direction: row; padding: 45px; gap: 40px; }
     .price-info-dark { text-align: left; }
     .price-box-navy-flex-aligned { flex: 0.8; padding: 45px 35px; width: auto; }
