@@ -37,35 +37,57 @@ body {
     justify-content: center;
 }
 
-/* Enhanced Branded Shield Logo Assembly Box */
-.logo-branded-box {
-    background: #101626; /* Pronounced dark background contrast box */
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    padding: 8px 22px;
+/* Bold Catchy Corporate Header Shield Display Box */
+.logo-premium-display {
+    background-color: #101626; /* Navy contrast brand container box */
+    border: 2px solid #D4AF37; /* Clean prominent gold frame boundary border ring */
+    padding: 12px 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 10px 30px rgba(16, 22, 38, 0.15);
+}
+
+/* Exact Bold Vector Monogram matching her provided brand image */
+.logo-shield-gold {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.03);
     border-radius: 6px;
     display: flex;
     align-items: center;
-    gap: 14px;
-    box-shadow: 0 4px 15px rgba(16, 22, 38, 0.12);
+    justify-content: center;
 }
 
-.logo-svg-asset {
-    width: 32px;
-    height: 32px;
+.logo-svg-vector {
+    width: 100%;
+    height: 100%;
 }
 
-.logo-divider-line {
-    width: 1px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+.logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    padding-left: 16px;
 }
 
-.logo-brand-text {
+.logo-main-title {
     font-family: 'Cinzel', serif;
+    font-weight: 800;
+    letter-spacing: 5px; /* High presence professional alignment spacing */
+    font-size: 1.4rem;
+    color: #FFFFFF; /* High contrast white title text */
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.logo-sub-tag {
+    font-size: 0.65rem;
     font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 0.95rem;
-    color: #FFFFFF; /* High contrast white brand text */
+    color: #D4AF37; /* Accent gold subtag parameter */
+    letter-spacing: 2px;
 }
 
 /* White Hero Design Layout with Text Gradients */
@@ -260,7 +282,7 @@ body {
 .journal-ruled-line {
     width: 100%;
     font-size: 0.85rem;
-    color: #CBD5E0; /* Subtle notebook prompt gray text color */
+    color: #CBD5E0;
     font-weight: 500;
     padding-bottom: 6px;
     border-bottom: 1px dashed #CBD5E0; /* Clear geometric dashed horizontal lines */
@@ -320,7 +342,7 @@ body {
 .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1); padding: 0 28px; }
 .faq-answer p { color: #4A5568; padding-bottom: 22px; font-size: 0.95rem; line-height: 1.6; }
 
-/* Fixed High-Contrast Rigid Pricing Card Architecture layout */
+/* Fixed High-Contrast Rigid Pricing Card Architecture Layout */
 .pricing-section { background-color: #FFFFFF; padding: 100px 0; text-align: center; }
 .pricing-card-white-elevated { background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; max-width: 850px; margin: 0 auto; position: relative; overflow: hidden; text-align: left; box-shadow: 0 30px 60px rgba(16, 22, 38, 0.06); }
 .pricing-tag-gold-neon { position: absolute; top: 15px; right: 15px; background-color: #101626; color: #D4AF37; padding: 5px 14px; font-weight: 700; font-size: 0.7rem; border-radius: 4px; letter-spacing: 1px; border: 1px solid rgba(212, 175, 55, 0.3); }
@@ -376,7 +398,7 @@ body {
 .matrix-tile h3 { font-size: 1.1rem; font-weight: 700; color: #B89324; margin-bottom: 8px; letter-spacing: 0.5px; }
 .matrix-tile p { font-size: 0.9rem; color: #4A5568; line-height: 1.5; }
 
-/* Premium Full-Stripe Branded Luxury Navy Footer Block */
+/* Premium Full-Stripe Corporate Solid Luxury Navy Footer Block */
 .small-label-gold { color: #B89324; font-weight: 700; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 15px; }
 
 .footer-premium-navy { 
