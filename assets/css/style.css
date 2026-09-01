@@ -255,12 +255,12 @@ body {
 .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; padding: 0 20px; }
 .faq-answer p { color: #4A5568; padding-bottom: 16px; font-size: 0.85rem; line-height: 1.5; }
 
-/* MOBILE PRICING LAYOUT resets */
+/* MOBILE INVESTMENT BOX FALLBACKS */
 .pricing-section { background-color: #FFFFFF; padding: 40px 0; text-align: center; }
 .pricing-position-wrapper { position: relative; width: 100%; display: flex; flex-direction: column; }
 .pricing-card-white-elevated { background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; max-width: 850px; margin: 24px auto 0 auto; position: relative; width: 100%; box-shadow: 0 15px 35px rgba(16, 22, 38, 0.04); }
 
-/* Centered gold badge on mobile fallback view */
+/* Centered gold neon badge on phone views */
 .pricing-tag-gold-neon { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background-color: #101626; color: #D4AF37; padding: 5px 16px; font-weight: 700; font-size: 0.7rem; border-radius: 4px; letter-spacing: 1px; border: 1px solid rgba(212, 175, 55, 0.3); white-space: nowrap; z-index: 10; }
 
 .pricing-split-clean { display: flex; flex-direction: column; padding: 35px 20px 24px 20px; gap: 20px; align-items: center; }
@@ -277,7 +277,7 @@ body {
 .currency-tag-white { font-size: 0.65rem; letter-spacing: 1px; color: #A0AEC0; display: block; margin-bottom: 2px; }
 .main-amt-gold { font-size: 2.8rem; font-weight: 700; color: #D4AF37; margin-bottom: 12px; }
 
-.pricing-btn-gold-fixed { width: 100% !important; max-width: 100% !important; display: block !important; }
+.pricing-btn-gold-fixed { width: 100% !important; max-width: 250px !important; display: block !important; }
 .secure-tag-white { font-size: 0.7rem; color: #A0AEC0; display: block; margin-top: 10px; }
 
 /* Audience Target Matrix */
@@ -289,7 +289,7 @@ body {
 .footer-premium-navy { padding: 40px 0; border-top: 1px solid rgba(212, 175, 55, 0.2); text-align: center; font-size: 0.8rem; color: #A0AEC0; background-color: #101626 !important; letter-spacing: 0.5px; }
 
 /* ==========================================================================
-   🌐 CRITICAL BREAKPOINT ALIGNMENT HARMONIZATION (Laptops & Wide Monitors)
+   🌐 LAPTOP SYMMETRY MECHANICS (Enforces absolute multi-column locking logs)
    ========================================================================== */
 @media (min-width: 769px) {
     .container { padding: 50px 20px; }
@@ -297,7 +297,7 @@ body {
     .heading-navy { font-size: 3.5rem; margin-bottom: 20px; }
     .subtitle-dark { font-size: 1.2rem; margin-bottom: 50px; }
     
-    /* Absolute flex layout locking prevents desktop scattering */
+    /* Layout grid horizontal separation configurations */
     .hero-split { flex-direction: row; align-items: center; gap: 60px; }
     .hero-image { flex: 0 0 400px; }
     .hero-image img { max-width: 400px; width: 100%; }
@@ -324,12 +324,12 @@ body {
     .mid-cta-card-box { padding: 40px; }
     .mid-cta-card-box h3 { font-size: 1.6rem; margin-bottom: 8px; }
     
-    /* MASTER ALIGNMENT: Secure Your Strategic Blueprint Box Fixed Architecture */
+    /* MASTER ALIGNMENT: Investment Card Block Fixed Architecture */
     .pricing-section { padding: 90px 0; }
     .pricing-position-wrapper { align-items: center; text-align: center; width: 100%; position: relative; }
     .pricing-card-white-elevated { margin: 30px auto 0 auto; width: 100%; max-width: 850px; }
     
-    /* Perfect Center Pinning Alignment for the neon tag ribbon over laptop layout */
+    /* Perfect Right-Corner alignment for the tag ribbon over laptop layout layouts */
     .pricing-tag-gold-neon { top: 20px; right: 40px; left: auto; transform: none; }
     
     .pricing-split-clean { flex-direction: row; padding: 50px 45px; gap: 40px; align-items: center; justify-content: space-between; }
