@@ -38,21 +38,22 @@ body {
     justify-content: center;
 }
 
-/* Bold Catchy Corporate Header Shield Display Box */
+/* Balanced Bold Corporate Header Shield Display Box */
 .logo-premium-display {
     background-color: #101626;
     border: 2px solid #D4AF37;
-    padding: 10px 24px;
+    padding: 12px 32px;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 14px;
-    box-shadow: 0 8px 25px rgba(16, 22, 38, 0.12);
+    gap: 18px;
+    box-shadow: 0 10px 30px rgba(16, 22, 38, 0.15);
 }
 
+/* Exact Bold Vector Monogram matching her provided brand image */
 .logo-shield-gold {
-    width: 42px;
-    height: 42px;
+    width: 48px;
+    height: 48px;
     background-color: rgba(255, 255, 255, 0.03);
     border-radius: 6px;
     display: flex;
@@ -69,25 +70,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-left: 1px solid rgba(255, 255, 255, 0.15);
-    padding-left: 14px;
+    border-left: 2px solid rgba(212, 175, 55, 0.3); /* Strong gold accent divider line */
+    padding-left: 16px;
 }
 
 .logo-main-title {
     font-family: 'Cinzel', serif;
     font-weight: 800;
-    letter-spacing: 4px;
-    font-size: 1.25rem;
-    color: #FFFFFF;
+    letter-spacing: 5px; /* High presence professional alignment spacing */
+    font-size: 1.4rem;
+    color: #FFFFFF; /* High contrast white title text */
     line-height: 1;
-    margin-bottom: 2px;
+    margin-bottom: 6px; /* Balanced spacing margin to bridge the text rows */
 }
 
 .logo-sub-tag {
-    font-size: 0.6rem;
+    font-family: 'Cinzel', serif; /* Shifted to matching serif font to rhyme seamlessly */
     font-weight: 700;
-    color: #D4AF37;
-    letter-spacing: 1.5px;
+    color: #D4AF37; /* Accent gold subtag parameter */
+    letter-spacing: 5px; /* Matched geometric tracking to align borders perfectly with title */
+    font-size: 0.8rem; /* Scaled up to rhyme seamlessly with the logo main title layout */
+    line-height: 1;
 }
 
 /* White Hero Design Layout with Compact Spacing */
@@ -340,12 +343,12 @@ body {
 
 .price-info-dark h3 { font-size: 1.4rem; color: #101626; margin-bottom: 6px; font-weight: 700; }
 .price-desc-dark { color: #4A5568; font-size: 0.85rem; margin-bottom: 16px; }
-.price-perks-dark { display: none; } /* Hidden inside short summary view block metrics */
+.price-perks-dark { display: none; }
 
 .currency-tag-white { font-size: 0.65rem; letter-spacing: 1px; color: #A0AEC0; display: block; margin-bottom: 2px; }
 .main-amt-gold { font-size: 2.8rem; font-weight: 700; color: #D4AF37; margin-bottom: 12px; }
 
-.pricing-btn-gold-fixed { width: 100% !important; max-width: 100% !important; display: block !important; }
+.pricing-btn-gold-fixed { width: 100% !important; max-width: 250px !important; display: block !important; }
 .secure-tag-white { font-size: 0.7rem; color: #A0AEC0; display: block; margin-top: 10px; }
 
 /* Audience Target Glass Matrix Grid */
@@ -374,7 +377,6 @@ body {
     .heading-navy { font-size: 3.5rem; margin-bottom: 20px; }
     .subtitle-dark { font-size: 1.2rem; margin-bottom: 50px; }
     
-    /* Layout grid horizontal separation configurations */
     .hero-split { flex-direction: row; align-items: center; gap: 50px; }
     .hero-image img { max-width: 400px; }
     .cta-button { width: fit-content; }
