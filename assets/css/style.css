@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
 }
 
+/* COMPACT VERTICAL GAP CONFIGURATIONS */
 .container {
     max-width: 1040px;
     margin: 0 auto;
@@ -32,29 +33,27 @@ body {
 .nav-container {
     max-width: 1040px;
     margin: 0 auto;
-    padding: 12px 16px;
+    padding: 16px 20px;
     display: flex;
     justify-content: center;
 }
 
-/* Professional Catchy Corporate Header Shield Display Box */
+/* Bold Catchy Corporate Header Shield Display Box */
 .logo-premium-display {
     background-color: #101626;
     border: 2px solid #D4AF37;
-    padding: 14px 36px;
+    padding: 12px 32px;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 20px;
-    box-shadow: 0 12px 35px rgba(16, 22, 38, 0.18);
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    gap: 18px;
+    box-shadow: 0 10px 30px rgba(16, 22, 38, 0.15);
 }
 
-.logo-premium-display:hover { transform: scale(1.02); }
-
+/* Exact Bold Vector Monogram Shield */
 .logo-shield-gold {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
     background-color: rgba(255, 255, 255, 0.03);
     border-radius: 6px;
     display: flex;
@@ -63,31 +62,39 @@ body {
     flex-shrink: 0;
 }
 
-.logo-svg-vector { width: 100%; height: 100%; }
+.logo-svg-vector {
+    width: 100%;
+    height: 100%;
+}
 
 .logo-text-wrapper {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     border-left: 2px solid rgba(212, 175, 55, 0.3);
-    padding-left: 20px;
+    padding-left: 16px;
 }
 
-/* Unified Single-Line High-Impact Corporate Title Heading */
-.company-brand-name {
+/* UPDATED BRAND RULES: Pure Premium Gold Typography Stack Alignment */
+.logo-main-title-gold {
     font-family: 'Cinzel', serif;
     font-weight: 800;
-    font-size: 1.5rem;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
+    font-size: 1.4rem;
+    color: #D4AF37; /* Clean golden color definition */
     line-height: 1;
-    display: flex;
-    gap: 12px;
-    white-space: nowrap;
+    margin-bottom: 4px;
 }
 
-.brand-white { color: #FFFFFF; }
-.brand-gold { color: #D4AF37; }
-
-/* White Hero Design Layout with Compact Spacing */
+.logo-sub-tag-gold {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: #D4AF37; /* Clean golden color definition */
+    letter-spacing: 5px;
+    font-size: 0.8rem; /* Aligned systematically smaller than main header title */
+    line-height: 1;
+}
+/* White Hero Design Layout with Text Gradients */
 .hero-white {
     padding: 30px 0;
     text-align: center;
@@ -99,11 +106,11 @@ body {
     background: rgba(212, 175, 55, 0.1);
     color: #B89324;
     border: 1px solid rgba(212, 175, 55, 0.3);
-    padding: 4px 12px;
+    padding: 5px 16px;
     font-weight: 700;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     border-radius: 4px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -135,217 +142,12 @@ body {
 .hero-glass-mini-card {
     background: rgba(248, 250, 252, 0.8);
     border: 1px solid #EDF2F7;
-    padding: 20px;
+    padding: 30px;
     border-radius: 12px;
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
 }
 
 .features-list-dark { list-style: none; }
-.features-list-dark li { margin-bottom: 12px; color: #2D3748; font-size: 0.95rem; line-height: 1.5; }
+.features-list-dark li { margin-bottom: 15px; color: #2D3748; font-size: 1rem; line-height: 1.6; }
 .features-list-dark strong { color: #101626; }
-/* Kinetic Floating Call-to-Action Anchors */
-.cta-button {
-    display: block;
-    background: #D4AF37;
-    color: #101626;
-    text-decoration: none;
-    padding: 15px 30px;
-    font-weight: 700;
-    font-size: 0.95rem;
-    border-radius: 6px;
-    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
-    transition: all 0.2s ease;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    width: 100%;
-}
-
-.cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 25px rgba(212, 175, 55, 0.35);
-}
-
-.format-tag-dark { font-size: 0.8rem; color: #718096; margin-top: 12px; text-align: center; }
-
-/* Solid Navy Core Visual Anchor Stripe */
-.problem-navy-stripe { background-color: #101626 !important; color: #FFFFFF; padding: 40px 0; text-align: center; }
-
-.section-title-white {
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.3;
-}
-
-.grid-4-columns { display: flex; flex-direction: column; gap: 16px; }
-
-.grid-card-navy {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 25px 20px;
-    border-radius: 12px;
-    text-align: left;
-}
-
-.card-icon-gold { font-size: 1.6rem; margin-bottom: 12px; }
-.grid-card-navy p { font-size: 0.9rem; color: #CBD5E0; line-height: 1.5; }
-
-/* Funnel Component Pipeline */
-.solution-white { background-color: #FFFFFF; padding: 40px 0; text-align: center; }
-.section-title-navy { font-size: 1.8rem; font-weight: 700; color: #101626; margin-bottom: 30px; }
-.pipeline-flow-container { display: flex; flex-direction: column; gap: 16px; margin-top: 20px; }
-
-.glass-card-elevated {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: 12px;
-    padding: 25px 20px;
-    box-shadow: 0 10px 25px rgba(16, 22, 38, 0.02);
-}
-
-.pipeline-step { text-align: left; position: relative; }
-.step-num { display: block; font-size: 0.75rem; font-weight: 700; color: #B89324; background: rgba(212, 175, 55, 0.1); padding: 3px 8px; width: fit-content; border-radius: 4px; margin-bottom: 12px; }
-.pipeline-step h3 { font-size: 1.15rem; color: #101626; margin-bottom: 8px; font-weight: 700; }
-.pipeline-step p { font-size: 0.85rem; color: #4A5568; line-height: 1.4; }
-
-/* Previews Section Layout Module */
-.inside-white-section { background-color: #FFFFFF; padding: 40px 0; text-align: center; }
-.journal-previews-row { display: flex; flex-direction: column; gap: 20px; margin-bottom: 30px; }
-.preview-mockup-card { text-align: left; }
-
-.page-header-index { display: block; font-size: 0.7rem; color: #A0AEC0; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 2px; }
-.page-tag { display: block; font-weight: 700; font-size: 1.15rem; color: #101626; font-family: 'Cinzel', serif; letter-spacing: 1px; margin-bottom: 15px; border-bottom: 1px solid #EDF2F7; padding-bottom: 6px; }
-
-.actual-journal-page-canvas h4 { font-size: 0.85rem; color: #101626; margin-top: 16px; margin-bottom: 8px; font-weight: 700; text-transform: uppercase; }
-.sub-alert-text { font-size: 0.7rem; color: #718096; font-style: italic; margin-bottom: 8px; display: block; }
-.sample-prompt-line { font-size: 0.8rem; color: #4A5568; background-color: #F8FAFC; padding: 10px 12px; border-left: 3px solid #D4AF37; margin-bottom: 10px; font-weight: 500; border-radius: 0 4px 4px 0; }
-/* Micro-Engineered Crisp Ruled Notebook Line Vectors */
-.journal-entry-lined-grid { margin: 15px 0; display: flex; flex-direction: column; gap: 12px; }
-.journal-ruled-line { width: 100%; font-size: 0.8rem; color: #CBD5E0; font-weight: 500; padding-bottom: 4px; border-bottom: 1px dashed #CBD5E0; }
-.page-footer-quote { font-size: 0.7rem; color: #B89324; font-style: italic; text-align: center; margin-top: 25px; border-top: 1px dashed #E2E8F0; padding-top: 10px; }
-
-.framework-bullets-container { max-width: 800px; margin: 30px auto 0 auto; border-top: 1px solid #EDF2F7; padding-top: 30px; }
-.framework-grid-list { display: flex; flex-direction: column; gap: 10px; list-style: none; text-align: left; }
-.framework-grid-list li { font-weight: 600; color: #101626; font-size: 0.9rem; }
-
-/* Mid-Page Invitation CTA Card Block */
-.mid-cta-invite-section { background-color: #FFFFFF; padding: 20px 0; }
-.mid-cta-card-box { max-width: 750px; margin: 0 auto; border-left: 4px solid #D4AF37 !important; text-align: center; padding: 25px 20px; }
-.mid-cta-card-box h3 { font-size: 1.3rem; color: #101626; margin-bottom: 6px; }
-.mid-cta-card-box p { font-size: 1rem; margin-bottom: 16px; }
-
-/* Accordion Component Panels */
-.faq-container { max-width: 750px; margin: 20px auto 0 auto; text-align: left; }
-.faq-item { background: #F8FAFC; margin-bottom: 10px; border-radius: 8px; border: 1px solid #EDF2F7; overflow: hidden; }
-
-.faq-question {
-    width: 100%; background: none; border: none; color: #101626; text-align: left; padding: 16px 20px; font-size: 0.95rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
-}
-
-.faq-icon { color: #B89324; font-size: 1.1rem; }
-.faq-icon::before { content: "+"; }
-.faq-item.active .faq-icon::before { content: "-"; }
-
-.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; padding: 0 20px; }
-.faq-answer p { color: #4A5568; padding-bottom: 16px; font-size: 0.85rem; line-height: 1.5; }
-
-/* MOBILE INVESTMENT BOX FALLBACKS */
-.pricing-section { background-color: #FFFFFF; padding: 40px 0; text-align: center; }
-.pricing-position-wrapper { position: relative; width: 100%; display: flex; flex-direction: column; }
-.pricing-card-white-elevated { background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; max-width: 850px; margin: 24px auto 0 auto; position: relative; width: 100%; box-shadow: 0 15px 35px rgba(16, 22, 38, 0.04); }
-
-/* Centered gold neon badge on phone views */
-.pricing-tag-gold-neon { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background-color: #101626; color: #D4AF37; padding: 5px 16px; font-weight: 700; font-size: 0.7rem; border-radius: 4px; letter-spacing: 1px; border: 1px solid rgba(212, 175, 55, 0.3); white-space: nowrap; z-index: 10; }
-
-.pricing-split-clean { display: flex; flex-direction: column; padding: 35px 20px 24px 20px; gap: 20px; align-items: center; }
-.price-info-dark { width: 100%; text-align: center; }
-
-.price-box-navy-flex-aligned {
-    width: 100%; background-color: #101626; color: #FFFFFF; padding: 30px 20px; border-radius: 8px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;
-}
-
-.price-info-dark h3 { font-size: 1.4rem; color: #101626; margin-bottom: 6px; font-weight: 700; }
-.price-desc-dark { color: #4A5568; font-size: 0.85rem; margin-bottom: 16px; }
-.price-perks-dark { display: none; }
-
-.currency-tag-white { font-size: 0.65rem; letter-spacing: 1px; color: #A0AEC0; display: block; margin-bottom: 2px; }
-.main-amt-gold { font-size: 2.8rem; font-weight: 700; color: #D4AF37; margin-bottom: 12px; }
-
-.pricing-btn-gold-fixed { width: 100% !important; max-width: 250px !important; display: block !important; }
-.secure-tag-white { font-size: 0.7rem; color: #A0AEC0; display: block; margin-top: 10px; }
-
-/* Audience Target Matrix */
-.target-glass-matrix-grid { display: flex; flex-direction: column; gap: 16px; margin-top: 20px; }
-.matrix-tile { text-align: left; }
-.matrix-tile h3 { font-size: 1rem; font-weight: 700; color: #B89324; margin-bottom: 4px; }
-.matrix-tile p { font-size: 0.85rem; color: #4A5568; line-height: 1.4; }
-
-.footer-premium-navy { padding: 40px 0; border-top: 1px solid rgba(212, 175, 55, 0.2); text-align: center; font-size: 0.8rem; color: #A0AEC0; background-color: #101626 !important; letter-spacing: 0.5px; }
-
-/* ==========================================================================
-   🌐 LAPTOP SYMMETRY MECHANICS (Enforces absolute multi-column locking logs)
-   ========================================================================== */
-@media (min-width: 769px) {
-    .container { padding: 50px 20px; }
-    .hero-white { padding: 60px 0; }
-    .heading-navy { font-size: 3.5rem; margin-bottom: 20px; }
-    .subtitle-dark { font-size: 1.2rem; margin-bottom: 50px; }
-    
-    /* Layout grid horizontal separation configurations */
-    .hero-split { flex-direction: row; align-items: center; gap: 60px; }
-    .hero-image { flex: 0 0 400px; }
-    .hero-image img { max-width: 400px; width: 100%; }
-    .hero-features { flex: 1; }
-    .cta-button { width: fit-content; }
-    
-    .problem-navy-stripe { padding: 80px 0; }
-    .section-title-white { font-size: 2.2rem; margin-bottom: 50px; }
-    .grid-4-columns { flex-direction: row; gap: 24px; }
-    .grid-card-navy { flex: 1; min-height: 240px; }
-    
-    .solution-white { padding: 80px 0; }
-    .section-title-navy { font-size: 2.5rem; margin-bottom: 40px; }
-    .pipeline-flow-container { flex-direction: row; gap: 20px; }
-    .pipeline-step { flex: 1; min-height: 200px; }
-    
-    .inside-white-section { padding: 80px 0; }
-    .journal-previews-row { flex-direction: row; gap: 40px; }
-    .preview-mockup-card { flex: 1; }
-    .framework-grid-list { display: grid; grid-template-columns: 1fr 1fr; gap: 15px 50px; }
-    .framework-grid-list li { font-size: 1rem; }
-    
-    .mid-cta-invite-section { padding: 40px 0; }
-    .mid-cta-card-box { padding: 40px; }
-    .mid-cta-card-box h3 { font-size: 1.6rem; margin-bottom: 8px; }
-    
-    /* MASTER ALIGNMENT: Investment Card Block Fixed Architecture */
-    .pricing-section { padding: 90px 0; }
-    .pricing-position-wrapper { align-items: center; text-align: center; width: 100%; position: relative; }
-    .pricing-card-white-elevated { margin: 30px auto 0 auto; width: 100%; max-width: 850px; }
-    
-    /* Perfect Right-Corner alignment for the tag ribbon over laptop layout layouts */
-    .pricing-tag-gold-neon { top: 20px; right: 40px; left: auto; transform: none; }
-    
-    .pricing-split-clean { flex-direction: row; padding: 50px 45px; gap: 40px; align-items: center; justify-content: space-between; }
-    .price-info-dark { text-align: left; flex: 1.2; }
-    .price-box-navy-flex-aligned { flex: 0.8; padding: 45px 35px; width: auto; max-width: 320px; min-height: 280px; }
-    .price-perks-dark { display: block; list-style: none; margin-top: 20px; text-align: left; }
-    .pricing-btn-gold-fixed { width: 100% !important; max-width: 250px !important; }
-    .main-amt-gold { font-size: 3.5rem; }
-    
-    .target-glass-matrix-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
-}
-
-/* Pulse Glow Animation Core */
-@keyframes pulseGlow {
-    0% { box-shadow: 0 10px 25px rgba(212, 175, 55, 0.25); }
-    50% { box-shadow: 0 15px 35px rgba(212, 175, 55, 0.5); }
-    100% { box-shadow: 0 10px 25px rgba(212, 175, 55, 0.25); }
-}
-.pulse-effect { animation: pulseGlow 3s infinite; }
